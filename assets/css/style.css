@@ -1,5 +1,11 @@
 /* Center the quiz section to the center of the screen, using the container as the main box that contains the content */
 
+*{
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
 html, body, .container{
   height: 100%;
   padding: 0;
@@ -17,6 +23,7 @@ header{
   padding-top: 10px;
   color: blueviolet;
   font-size: x-large;
+  background-color: white;
 }
 
 #card{
@@ -24,7 +31,7 @@ header{
   background-color: rgb(141, 137, 137);
   max-width: 75%;
   border: 10px solid black;
-  margin: 0 auto;
+  margin: 200px auto;
 }
 
 .btn{
