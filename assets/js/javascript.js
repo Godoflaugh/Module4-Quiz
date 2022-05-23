@@ -9,13 +9,13 @@ var countDownEL = document.querySelector("#countDown")
 // var timer = seconds * 60
 
 
-
+startBtn.addEventListener("click", startQuiz)
 // Timer Function
 function cdTimer() {
   var timeLeft = 90
 
   // Listen's for click 
-  startBtn.addEventListener("click", startQuiz)
+  
 
   var timeInterval = setInterval(function () {
 
@@ -45,4 +45,3 @@ function startQuiz() {
 }
 
 
-startQuiz()

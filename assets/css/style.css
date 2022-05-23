@@ -26,6 +26,7 @@ header{
   background-color: white;
 }
 
+
 #card{
   text-align: center;
   background-color: rgb(141, 137, 137);
@@ -34,9 +35,9 @@ header{
   margin: 200px auto;
 }
 
-.btn{
+#start{
   border: none;
-  background-color: rgb(151, 5, 5);
+  background-color: red;
   color: white;
   border-radius: 100px;
   -webkit-border-radius: 100px;
@@ -50,5 +51,44 @@ header{
   display: inline-block;
 
   padding: 30px 100px;
-  margin: 0 auto;
+  margin: 10px 25px;
+}
+
+#start:hover{
+  background-color: rgb(121, 12, 12);
+  color: ghostwhite;
+}
+
+
+#exit{
+  border: none;
+  background-color: red;
+  color: white;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  font-size: 30px;
+  line-height: 10px;
+  text-align: center;
+  cursor: pointer;
+  display: inline-block;
+
+  padding: 30px 100px;
+  margin: 10px 25px;
+}
+
+#exit:hover{
+  background-color: rgb(121, 12, 12);
+  color: ghostwhite;
+}
+
+/* This will target the full container then the child of the button, creating a flex box for the buttons only which then can be spaced as desired */
+#btn{
+  height: 150px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
 }
