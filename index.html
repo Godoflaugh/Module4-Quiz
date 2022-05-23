@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel = "stylesheet" href="./assets/css/style.css">
+
+  <title>Javascript Code Quiz!</title>
+</head>
+
+
+
+<body>
+ <header id="highScore">High Scores</header> 
+ <header id="timer"> Timer</header>
+
+ <!-- Main box for the quiz template to sit in -->
+ <!-- 1. Create the form for the quiz to live in with header, body and footer
+1a. header will contain the question that changes after user clicks
+2a. Body will contain the answers to questions each as a clickable button
+3a. Footer will be seperated from body by horizontal line and if the users answer was correct or not
+
+2. Timer will be executed in the header as well aligned to the right and will countdown from X time, if incorrect the timer will dedcut extra time from counter. 
+b. the quiz will be ended if the timer reaches 0, resulting in a current score represented then a try again button or go back to main screen
+
+3. Start button will begin the quiz and the timer on click
+
+4. The users score will be saved to localStorage and they will be able to log initials and the score so that on high score screen the users score will be displayed
+
+5. Basic CSS required for work, simple white and colored buttons with elements centered. 
+6. JS will require the questions to be created and stored then accessed after each user answer
+
+-->
+ <div id="container">
+    <div id="card">
+      <div id="cardHeader">
+        <!-- In the card header, create a new div that will handle the questions that are shown. -->
+        <h1> Coding quiz Challenge </h1>
+      </div>
+        
+      <hr>
+<!-- The body should change to reflect, the answers that can be clicked on for the questions -->
+      <div id="cardBody">
+        <h2>Welcome to the Coding Boot Camp quiz on Javascript! You will be asked a series of questions based on Javascript, these are time sensitive. Do your best and compare your score to others! You will be able to log your high score after the quiz!</h2>
+      </div> 
+
+      <hr>
+
+
+      <!-- In the footer, we should show the correct answer based on the provided input -->
+      <div id="cardFooter">
+        <button id="start" class="btn"> Start</button>
+          <h3> Click the start button to begin the quiz!</h3>
+      </div>
+
+
+
+
+
+    </div>
+
+
+
+
+
+ </div>
+
+
+
+  <script src = "assets/js/javascript.js"></script>
+</body>
+</html>

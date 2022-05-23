@@ -1,0 +1,47 @@
+/* Center the quiz section to the center of the screen, using the container as the main box that contains the content */
+
+html, body, .container{
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  font-family: sans-serif, 'Times New Roman', Times, serif;
+  background-color: rgb(255, 255, 255);
+}
+
+header{
+  text-align: left;
+  padding: 20px;
+  padding-top: 10px;
+  color: blueviolet;
+  font-size: x-large;
+}
+
+#card{
+  text-align: center;
+  background-color: rgb(141, 137, 137);
+  max-width: 75%;
+  border: 10px solid black;
+  margin: 0 auto;
+}
+
+.btn{
+  border: none;
+  background-color: rgb(151, 5, 5);
+  color: white;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  font-size: 30px;
+  line-height: 10px;
+  text-align: center;
+  cursor: pointer;
+  display: inline-block;
+
+  padding: 30px 100px;
+  margin: 0 auto;
+}
