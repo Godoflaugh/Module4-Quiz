@@ -43,7 +43,7 @@ b. the quiz will be ended if the timer reaches 0, resulting in a current score r
         
       <hr>
 <!-- The body should change to reflect, the answers that can be clicked on for the questions -->
-      <div id="cardBody">
+      <div id="Startbody">
         <h2>Welcome to the Coding Boot Camp quiz on Javascript! You will be asked a series of questions based on Javascript, these are time sensitive. Do your best and compare your score to others! You will be able to log your high score after the quiz!</h2>
       </div> 
 
@@ -51,7 +51,7 @@ b. the quiz will be ended if the timer reaches 0, resulting in a current score r
 
 
       <!-- In the footer, we should show the correct answer based on the provided input -->
-      <div id="cardFooter">
+      <div id="startFooter">
 
         <div id="btn">
           <button id="start"> Start</button>
@@ -60,21 +60,32 @@ b. the quiz will be ended if the timer reaches 0, resulting in a current score r
        
           <h3> Click the start button to begin the quiz!</h3>
       </div>
-
-
-
-
-
     </div>
 
+<!-- Quiz Section -->
+  <div id="quiz">
+      <div id="quizHeader">
+        <h5>Java Quiz!</h5>
+        
+      </div>
 
+<hr>
+<!-- Question -->
+      <div id="questions">
+        <h2 id = "questionNo">1. </h2>
+        <h2 id = "questionText"> Javascript is? </h2>
+      </div>
+<!-- The answer options -->
+      <div id="optionList">
+        <h4 class ="choice" id="option1">A coding Language that handles logic</h4>
+        <h4 class ="choice" id="option2">A type of Coffee Shop</h4>
+        <h4 class ="choice" id="option3">A bike</h4>
+        <h4 class ="choice" id="option4">A test</h4>
+      </div>
 
+  </div>
 
-
- </div>
-
-
-
+</div>
   <script src = "assets/js/javascript.js"></script>
 </body>
 </html>

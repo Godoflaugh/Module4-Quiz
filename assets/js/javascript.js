@@ -9,13 +9,11 @@ var countDownEL = document.querySelector("#countDown")
 // var timer = seconds * 60
 
 
+// Listen for click to initalize the function
 startBtn.addEventListener("click", startQuiz)
 // Timer Function
 function cdTimer() {
   var timeLeft = 90
-
-  // Listen's for click 
-  
 
   var timeInterval = setInterval(function () {
 
@@ -45,3 +43,13 @@ function startQuiz() {
 }
 
 
+// const questions = {
+
+// questions: "1. What is Javascript?", a1: " 1. A language to handle logic for HTML", a2: "2. A type of coffee place", a3: "A type of pencil", a4: "None of the above"
+// }
+
+
+
+
+
+// } 

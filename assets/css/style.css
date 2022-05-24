@@ -25,16 +25,37 @@ header{
   font-size: x-large;
   background-color: white;
 }
-
-
-#card{
-  text-align: center;
-  background-color: rgb(141, 137, 137);
-  max-width: 75%;
-  border: 10px solid black;
-  margin: 200px auto;
+/* Whole screen */
+#container{
+  height: auto;
+  width: auto;
 }
 
+/* Card holding the box */
+#card, #quiz {
+  text-align: center;
+  background-color: rgb(141, 137, 137);
+  height: auto;
+  max-width: 75%;
+  border: 10px solid black;
+  border-radius: 5px;
+  margin: 0 auto;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+#card h1{
+  font-size: 60px;
+}
+
+#card  h2{
+  font-size: 24px;
+  line-height: 1.2;
+}
+
+/* Start Button */
 #start{
   border: none;
   background-color: red;
@@ -91,4 +112,82 @@ header{
   display: flex;
   justify-content: space-evenly;
   padding: 10px;
+}
+
+
+/* Quiz styling */
+#quiz{
+  display: block;
+  height: 600px;
+  position: relative;
+}
+
+#quiz #quizHeader{ height:100px; width: 100%; background:rgb(206, 57, 57); position: absolute; top: 0; left: 0; display: flex; align-items: center; flex-direction: row; border-radius:30px 0 ; -webkit-border-radius:30px 0 ; -moz-border-radius:30px 0 ; -ms-border-radius:30px 0 ; -o-border-radius:30px 0 ;
+  
+}
+
+#quiz #quizHeader h5{
+  font-size: 30px;
+  margin: 0 20px;
+  color: black;
+  text-align: center;
+}
+
+/* Quiz Questions */
+
+#quiz #questions{
+  position: absolute;
+  top:  120px;
+  display:flex;
+  flex-direction: row;
+
+}
+
+#quiz #questions h2{
+  font-size: 24px;
+
+}
+
+#quiz #questions h2:first-child{
+  margin: 0 10px 0 5px
+}
+
+
+/* CSS for answers list */
+#quiz #optionList{
+  height:500px;
+  width: 100%;
+  position: absolute;
+  top: 150px;
+}
+
+#quiz #optionList h4{
+  height: 50px;
+  width: 500px;
+  background-color: rgb(206, 57, 57);
+  line-height: 20px;
+  margin: 40px 0;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  padding: 25px 20px;
+  font-size: 20px;
+  color: #fff;
+  overflow: hidden;
+  border: 1px, solid, blue;
+  cursor: pointer;
+}
+
+#quiz #optionList h4:hover{
+  background-color: rgb(102, 102, 221);
+}
+
+#quiz #optionList .active{
+background-color: rgb(102, 102, 221);
+}
+
+#quiz #optionList .disabled{
+pointer-events: none;
 }
