@@ -58,7 +58,7 @@ header{
 /* Start Button */
 #start{
   border: none;
-  background-color: red;
+  background-color: rgb(206, 57, 57);
   color: white;
   border-radius: 100px;
   -webkit-border-radius: 100px;
@@ -83,7 +83,7 @@ header{
 
 #exit{
   border: none;
-  background-color: red;
+  background-color: rgb(206, 57, 57);
   color: white;
   border-radius: 100px;
   -webkit-border-radius: 100px;
@@ -154,14 +154,14 @@ header{
 
 
 /* CSS for answers list */
-#quiz #optionList{
+#quiz #answerList{
   height:500px;
   width: 100%;
   position: absolute;
   top: 150px;
 }
 
-#quiz #optionList h4{
+#quiz #answerList h4{
   height: 50px;
   width: 500px;
   background-color: rgb(206, 57, 57);
@@ -180,14 +180,18 @@ header{
   cursor: pointer;
 }
 
-#quiz #optionList h4:hover{
-  background-color: rgb(102, 102, 221);
+#quiz #answerList h4:hover{
+  background-color: rgb(121, 12, 12);
 }
 
-#quiz #optionList .active{
-background-color: rgb(102, 102, 221);
+#quiz #answerList .active{
+background-color: rgb(121, 12, 12);
 }
 
-#quiz #optionList .disabled{
+#quiz #answerList .disabled{
 pointer-events: none;
+}
+
+.hide{
+  display: none;
 }

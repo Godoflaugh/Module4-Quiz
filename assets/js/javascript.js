@@ -43,10 +43,7 @@ function startQuiz() {
 }
 
 
-// const questions = {
 
-// questions: "1. What is Javascript?", a1: " 1. A language to handle logic for HTML", a2: "2. A type of coffee place", a3: "A type of pencil", a4: "None of the above"
-// }
 
 
 
